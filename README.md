@@ -25,6 +25,11 @@ Uncaught Error: Type SharedComponent is part of the declarations of 2 modules: S
 
 So it seems like a no-win situation.  
 
+## 
+
+Solution: I'd been declaring the module twice.  Had to move it up to imports.  That sorted it.  
+
+
 ## References
 
 Here are some of the many articles I've looked at in trying to find an answer to this problem:
@@ -44,3 +49,4 @@ Here are some of the many articles I've looked at in trying to find an answer to
 * https://angular.io/guide/ngmodule-faq#what-if-i-import-the-same-module-twice
 * https://blog.angularindepth.com/avoiding-common-confusions-with-modules-in-angular-ada070e6891f
 * https://www.sitepoint.com/angular-ngmodules/
+
